@@ -1,6 +1,7 @@
 package com.practice.controller;
 
 
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 
@@ -62,6 +63,10 @@ public class MyController {
 	@GetMapping("/service")
 	public String serviceHandler(Model m)
 	{
+		m.addAttribute("title", "I like thymeleaf topic");
+		m.addAttribute("subtitle", LocalDateTime.now().toString());
+		
+		
 		return "service";
 	}
 }
