@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>footer template </title>
+</head>
+<body>
+	
+	<footer id="fragmentTag" th:fragment="footer1">
+	<div class="container">
+	
+	<h1>All details About fragments </h1>
+	<h2>the fragments ara used is three ways</h2>
+	<h1>1. replace 2. include 3. insert</h1>
+	
+	<p>Basic inclusion with th:insert and th:replace
+Thymeleaf can include parts of other pages as fragments (whereas JSP only includes complete pages) using th:insert (it will simply insert the specified fragment as the body of its host tag) or th:replace (will actually substitute the host tag by the fragment’s). This allows the grouping of fragments into one or several pages. Look at the example.
+
+The home/homeNotSignedIn.html template is rendered when the anonymous user enters the home page of our application.
+In this style pages are built by embedding common page component code directly within each view to generate the final result. In Thymeleaf this can be done using Thymeleaf Standard Layout System:</p>
+	
+	</div>
+	
+	
+	</footer>
+	
+</body>
+</html>
